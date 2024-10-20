@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "add"
+name = "integration"
 version = "0.1.0"
