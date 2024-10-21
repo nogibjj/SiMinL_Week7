@@ -27,20 +27,15 @@ Prerequisites: Rust is installed
 
 ## Option 2
 Download Prebuilt Binary (No Rust Required)
-Download the prebuilt binary artifact and ensure using a Linux environment (e.g., GitHub Codespaces, a Linux VM, or a Linux machine)
+Download the prebuilt binary artifact. The artifact in CI/CD is a file or set of files generated during the build / test/ deployment phases that are saved and made accessible for future use.
 
 1. Go to the Actions tab in the repository.
 2. Select the latest workflow run.
 3. Scroll down to Artifacts and download the yijia_ids706_mini_proj7.
 4. Move the binary to a Linux environment where you want to run the tool (e.g., GitHub Codespaces or a Linux machine).
-Usage of Binary:
-./yijia_ids706_mini_proj7
 
----It will prompt you to enter a list of numbers (separated by spaces) and will return the mean and median.---
-
-CI/CD Pipeline
+# CI/CD Pipeline
 This project uses GitHub Actions for continuous integration. The pipeline automatically:
-
 - Checks formatting using cargo fmt.
 - Lints the code with cargo clippy.
 = Runs tests using cargo test.
