@@ -1,12 +1,14 @@
-# Rust Project Template with functional CI/CD, devcontainer, dockerfile
+[![CI](https://github.com/nogibjj/SiMinL_Week7/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/SiMinL_Week7/actions/workflows/CI.yml)
 
-This repository contains Rust implementations for approximating definite integrals of functions with the Trapezoidal Rule. Basic structure including CI/CD, Testing, Makefile and reproducible environments are included.
+# Rust Project Template with functional CI/CD, devcontainer, dockerfile
+This repository contains Rust implementations for approximating definite integrals of functions with the Trapezoidal Rule numerical method. Basic structure including CI/CD, Testing, Makefile and reproducible environments are included.
 
 # Project Structure
-- SRC: Contains lib.rs which has the core functions to compute  , and main.rs which calls functions from lib.rs
-- Data
-
-# Functions
+- Devcontainer
+- Makefile
+- github workflows containing the CI/CD pipeline
+- SRC: Contains lib.rs which has the core functions to compute the integral, and main.rs which calls functions from lib.rs
+- Tests to ensure tool works correctly
 
 # Running the Code
 ## Option 1

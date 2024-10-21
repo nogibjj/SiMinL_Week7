@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -24,22 +24,18 @@ jobs:
 
     - name: Check
       run: make check
-      working-directory: ${{ env.WORKING_DIR }}
 
     - name: Format
       run: make format
-      working-directory: ${{ env.WORKING_DIR }}
 
     - name: Test
       run: make test
-      working-directory: ${{ env.WORKING_DIR }}
 
     - name: Release
-      run: make release
-      working-directory: ${{ env.WORKING_DIR }}
+      run: cargo build --release
 
     - name: Upload Binary Artifact
       uses: actions/upload-artifact@v4 #v3 is scheduled for deprecation Nov 30 2024 check marketplace
       with:
-        name: release-binary
-        path: ${{ env.WORKING_DIR }}/target/release/minigrep
+        name: Rust Artificat Binary
+        path: /target/release/main #change the /add to the name of your binary
