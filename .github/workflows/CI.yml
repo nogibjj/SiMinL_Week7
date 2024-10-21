@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Rust Binary Artifact
-        path: target/release/integration_project # <-- Ensure the name matches your binary
+        path: target/release/integration # <-- Ensure the name matches your binary
