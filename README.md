@@ -31,12 +31,12 @@ Download the prebuilt binary artifact. The artifact in CI/CD is a file or set of
 
 1. Go to the Actions tab in the repository.
 2. Select the latest workflow run.
-3. Scroll down to Artifacts and download the yijia_ids706_mini_proj7.
+3. Scroll down to Artifacts and download the file.
 4. Move the binary to a Linux environment where you want to run the tool (e.g., GitHub Codespaces or a Linux machine).
 
 # CI/CD Pipeline
 This project uses GitHub Actions for continuous integration. The pipeline automatically:
 - Checks formatting using cargo fmt.
 - Lints the code with cargo clippy.
-= Runs tests using cargo test.
+- Runs tests using cargo test.
 - Builds the project in release mode using cargo build --release.
