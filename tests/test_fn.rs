@@ -1,4 +1,6 @@
 //[cfg(test)]
+use integration::trapezoidal_rule;
+
 mod tests {
     use super::*;
 
